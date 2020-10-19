@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Krt-af-7S5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date Picker View Controller-->
+        <scene sceneID="ddq-hM-gIL">
+            <objects>
+                <viewController id="Krt-af-7S5" customClass="DatePickerViewController" customModule="iOS14UICatelog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofI-fH-7Xf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-2I-RZk">
+                                <rect key="frame" x="24" y="791" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="iPA-1D-Jlp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="216"/>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-137494800">
+                                    <!--1996-08-23 15:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                    <!--2037-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja_JP"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WHT-lL-IMg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iPA-1D-Jlp" firstAttribute="top" secondItem="WHT-lL-IMg" secondAttribute="top" id="3Nw-Dz-4Ft"/>
+                            <constraint firstItem="WHT-lL-IMg" firstAttribute="bottom" secondItem="Gcj-2I-RZk" secondAttribute="bottom" constant="50" id="4Qs-9L-EBM"/>
+                            <constraint firstItem="iPA-1D-Jlp" firstAttribute="trailing" secondItem="WHT-lL-IMg" secondAttribute="trailing" id="bKX-WA-5Po"/>
+                            <constraint firstItem="WHT-lL-IMg" firstAttribute="trailing" secondItem="Gcj-2I-RZk" secondAttribute="trailing" constant="24" id="lRy-4h-7VR"/>
+                            <constraint firstItem="Gcj-2I-RZk" firstAttribute="leading" secondItem="WHT-lL-IMg" secondAttribute="leading" constant="24" id="mWp-A9-urw"/>
+                            <constraint firstItem="iPA-1D-Jlp" firstAttribute="leading" secondItem="WHT-lL-IMg" secondAttribute="leading" id="q7A-7W-cf3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Gcj-2I-RZk" id="W8y-mb-i9w"/>
+                        <outlet property="datePicker" destination="iPA-1D-Jlp" id="Nub-ti-E1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pps-DK-IIh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="95"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
