@@ -17,6 +17,8 @@
 		DF838D28253D527A00766B80 /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D27253D527A00766B80 /* Button.storyboard */; };
 		DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D2C253D562F00766B80 /* BarButtonItemViewController.swift */; };
 		DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D30253D563900766B80 /* BarButtonItem.storyboard */; };
+		DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D34253D579900766B80 /* ColorPickerViewController.swift */; };
+		DF838D39253D57A000766B80 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D38253D57A000766B80 /* ColorPicker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		DF838D27253D527A00766B80 /* Button.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
 		DF838D2C253D562F00766B80 /* BarButtonItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemViewController.swift; sourceTree = "<group>"; };
 		DF838D30253D563900766B80 /* BarButtonItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarButtonItem.storyboard; sourceTree = "<group>"; };
+		DF838D34253D579900766B80 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		DF838D38253D57A000766B80 /* ColorPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPicker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		DF838D07253D2EB700766B80 /* iOS14UICatelog */ = {
 			isa = PBXGroup;
 			children = (
+				DF838D33253D578900766B80 /* ColorPicker */,
 				DF838D2B253D561500766B80 /* UIBarButtonItem+Menu */,
 				DF838D22253D524900766B80 /* UIButton+Menu */,
 				DF838D08253D2EB700766B80 /* AppDelegate.swift */,
@@ -93,6 +98,15 @@
 				DF838D30253D563900766B80 /* BarButtonItem.storyboard */,
 			);
 			path = "UIBarButtonItem+Menu";
+			sourceTree = "<group>";
+		};
+		DF838D33253D578900766B80 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DF838D34253D579900766B80 /* ColorPickerViewController.swift */,
+				DF838D38253D57A000766B80 /* ColorPicker.storyboard */,
+			);
+			path = ColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +170,7 @@
 				DF838D28253D527A00766B80 /* Button.storyboard in Resources */,
 				DF838D15253D2EB900766B80 /* LaunchScreen.storyboard in Resources */,
 				DF838D12253D2EB900766B80 /* Assets.xcassets in Resources */,
+				DF838D39253D57A000766B80 /* ColorPicker.storyboard in Resources */,
 				DF838D10253D2EB700766B80 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +184,7 @@
 			files = (
 				DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */,
 				DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */,
+				DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */,
 				DF838D0D253D2EB700766B80 /* HomeViewController.swift in Sources */,
 				DF838D09253D2EB700766B80 /* AppDelegate.swift in Sources */,
 				DF838D0B253D2EB700766B80 /* SceneDelegate.swift in Sources */,
