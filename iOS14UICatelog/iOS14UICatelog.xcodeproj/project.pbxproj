@@ -19,6 +19,8 @@
 		DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D30253D563900766B80 /* BarButtonItem.storyboard */; };
 		DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D34253D579900766B80 /* ColorPickerViewController.swift */; };
 		DF838D39253D57A000766B80 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D38253D57A000766B80 /* ColorPicker.storyboard */; };
+		DF838D3D253D5ACC00766B80 /* FontPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D3C253D5ACC00766B80 /* FontPicker.storyboard */; };
+		DF838D40253D5AD300766B80 /* FontPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D3F253D5AD300766B80 /* FontPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		DF838D30253D563900766B80 /* BarButtonItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarButtonItem.storyboard; sourceTree = "<group>"; };
 		DF838D34253D579900766B80 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		DF838D38253D57A000766B80 /* ColorPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPicker.storyboard; sourceTree = "<group>"; };
+		DF838D3C253D5ACC00766B80 /* FontPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FontPicker.storyboard; sourceTree = "<group>"; };
+		DF838D3F253D5AD300766B80 /* FontPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontPickerViewController.swift; sourceTree = "<group>"; };
+		DF838D43253D5B4000766B80 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Home.strings; sourceTree = "<group>"; };
+		DF838D44253D5B4000766B80 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		DF838D07253D2EB700766B80 /* iOS14UICatelog */ = {
 			isa = PBXGroup;
 			children = (
+				DF838D3B253D5AC100766B80 /* FontPicker */,
 				DF838D33253D578900766B80 /* ColorPicker */,
 				DF838D2B253D561500766B80 /* UIBarButtonItem+Menu */,
 				DF838D22253D524900766B80 /* UIButton+Menu */,
@@ -107,6 +114,15 @@
 				DF838D38253D57A000766B80 /* ColorPicker.storyboard */,
 			);
 			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		DF838D3B253D5AC100766B80 /* FontPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DF838D3F253D5AD300766B80 /* FontPickerViewController.swift */,
+				DF838D3C253D5ACC00766B80 /* FontPicker.storyboard */,
+			);
+			path = FontPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +166,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = DF838CFC253D2EB700766B80;
 			productRefGroup = DF838D06253D2EB700766B80 /* Products */;
@@ -168,6 +185,7 @@
 			files = (
 				DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */,
 				DF838D28253D527A00766B80 /* Button.storyboard in Resources */,
+				DF838D3D253D5ACC00766B80 /* FontPicker.storyboard in Resources */,
 				DF838D15253D2EB900766B80 /* LaunchScreen.storyboard in Resources */,
 				DF838D12253D2EB900766B80 /* Assets.xcassets in Resources */,
 				DF838D39253D57A000766B80 /* ColorPicker.storyboard in Resources */,
@@ -185,6 +203,7 @@
 				DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */,
 				DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */,
 				DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */,
+				DF838D40253D5AD300766B80 /* FontPickerViewController.swift in Sources */,
 				DF838D0D253D2EB700766B80 /* HomeViewController.swift in Sources */,
 				DF838D09253D2EB700766B80 /* AppDelegate.swift in Sources */,
 				DF838D0B253D2EB700766B80 /* SceneDelegate.swift in Sources */,
@@ -198,6 +217,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DF838D0F253D2EB700766B80 /* Base */,
+				DF838D43253D5B4000766B80 /* ja */,
 			);
 			name = Home.storyboard;
 			sourceTree = "<group>";
@@ -206,6 +226,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DF838D14253D2EB900766B80 /* Base */,
+				DF838D44253D5B4000766B80 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -217,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -278,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

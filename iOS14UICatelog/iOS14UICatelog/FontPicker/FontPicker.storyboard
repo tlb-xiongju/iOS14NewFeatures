@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Go-qO-liK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Font Picker View Controller-->
+        <scene sceneID="fzn-o5-fiD">
+            <objects>
+                <viewController id="4Go-qO-liK" customClass="FontPickerViewController" customModule="iOS14UICatelog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0nS-wj-ihm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UO-5V-bXS">
+                                <rect key="frame" x="24" y="418" width="366" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aYp-wy-q43"/>
+                                </constraints>
+                                <state key="normal" title="Tap to choose a font"/>
+                                <connections>
+                                    <action selector="presentFontPicker:" destination="4Go-qO-liK" eventType="touchUpInside" id="r03-AK-Apr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a English label." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcL-9d-WH0">
+                                <rect key="frame" x="24" y="94" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これが日本語ラベルです！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwQ-MX-Hj3">
+                                <rect key="frame" x="24" y="791.5" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FHg-Dx-Duu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FHg-Dx-Duu" firstAttribute="trailing" secondItem="GwQ-MX-Hj3" secondAttribute="trailing" constant="24" id="4Ch-L6-vwM"/>
+                            <constraint firstItem="FHg-Dx-Duu" firstAttribute="trailing" secondItem="7UO-5V-bXS" secondAttribute="trailing" constant="24" id="7rt-Ww-a8f"/>
+                            <constraint firstItem="7UO-5V-bXS" firstAttribute="centerY" secondItem="0nS-wj-ihm" secondAttribute="centerY" id="LjK-3z-naf"/>
+                            <constraint firstItem="EcL-9d-WH0" firstAttribute="leading" secondItem="FHg-Dx-Duu" secondAttribute="leading" constant="24" id="WVx-Wk-g9y"/>
+                            <constraint firstItem="FHg-Dx-Duu" firstAttribute="bottom" secondItem="GwQ-MX-Hj3" secondAttribute="bottom" constant="50" id="Xad-mu-70o"/>
+                            <constraint firstItem="EcL-9d-WH0" firstAttribute="top" secondItem="FHg-Dx-Duu" secondAttribute="top" constant="50" id="h2m-Jt-RZh"/>
+                            <constraint firstItem="GwQ-MX-Hj3" firstAttribute="leading" secondItem="FHg-Dx-Duu" secondAttribute="leading" constant="24" id="h7A-0y-Q2U"/>
+                            <constraint firstItem="7UO-5V-bXS" firstAttribute="leading" secondItem="FHg-Dx-Duu" secondAttribute="leading" constant="24" id="irC-mZ-Q3p"/>
+                            <constraint firstItem="FHg-Dx-Duu" firstAttribute="trailing" secondItem="EcL-9d-WH0" secondAttribute="trailing" constant="24" id="qGd-Av-9Yg"/>
+                            <constraint firstItem="7UO-5V-bXS" firstAttribute="centerX" secondItem="0nS-wj-ihm" secondAttribute="centerX" id="tUS-d1-bUS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="englishLabel" destination="EcL-9d-WH0" id="zA5-Z8-Qni"/>
+                        <outlet property="fontPickerButton" destination="7UO-5V-bXS" id="8PO-Kk-S8L"/>
+                        <outlet property="japaneseLabel" destination="GwQ-MX-Hj3" id="XXu-w9-X8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wla-9b-Ajd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-494" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
