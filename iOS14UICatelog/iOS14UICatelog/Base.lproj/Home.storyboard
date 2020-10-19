@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--UIKit news-->
+        <!--iOS14-->
         <scene sceneID="DgS-mg-9Ln">
             <objects>
                 <collectionViewController id="PkA-Vh-f3g" customClass="HomeViewController" customModule="iOS14UICatelog" customModuleProvider="target" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                             <outlet property="delegate" destination="PkA-Vh-f3g" id="chV-G6-hCh"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="UIKit news" id="Dvm-fZ-71P"/>
+                    <navigationItem key="navigationItem" title="iOS14" id="Dvm-fZ-71P"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FD-A3-SAz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

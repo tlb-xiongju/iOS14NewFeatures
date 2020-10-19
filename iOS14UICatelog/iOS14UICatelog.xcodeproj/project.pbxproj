@@ -25,6 +25,9 @@
 		DF838D4C253D5F3200766B80 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D4B253D5F3200766B80 /* DatePicker.storyboard */; };
 		DF838D50253D625700766B80 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D4F253D625700766B80 /* ImagePickerViewController.swift */; };
 		DF838D54253D626000766B80 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D53253D626000766B80 /* ImagePicker.storyboard */; };
+		DF838D5C253D6CAC00766B80 /* AlbumAccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D5B253D6CAC00766B80 /* AlbumAccess.storyboard */; };
+		DF838D5F253D6CB400766B80 /* AlbumAccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D5E253D6CB400766B80 /* AlbumAccessViewController.swift */; };
+		DF838D66253D6FF500766B80 /* AlbumAccessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D64253D6FF500766B80 /* AlbumAccessCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		DF838D4B253D5F3200766B80 /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
 		DF838D4F253D625700766B80 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		DF838D53253D626000766B80 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
+		DF838D5B253D6CAC00766B80 /* AlbumAccess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumAccess.storyboard; sourceTree = "<group>"; };
+		DF838D5E253D6CB400766B80 /* AlbumAccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAccessViewController.swift; sourceTree = "<group>"; };
+		DF838D64253D6FF500766B80 /* AlbumAccessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAccessCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		DF838D07253D2EB700766B80 /* iOS14UICatelog */ = {
 			isa = PBXGroup;
 			children = (
+				DF838D5A253D6CA000766B80 /* AlbumAccess */,
 				DF838D4E253D624900766B80 /* ImagePicker */,
 				DF838D46253D5F1700766B80 /* DatePicker */,
 				DF838D3B253D5AC100766B80 /* FontPicker */,
@@ -153,6 +160,16 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
+		DF838D5A253D6CA000766B80 /* AlbumAccess */ = {
+			isa = PBXGroup;
+			children = (
+				DF838D5E253D6CB400766B80 /* AlbumAccessViewController.swift */,
+				DF838D5B253D6CAC00766B80 /* AlbumAccess.storyboard */,
+				DF838D64253D6FF500766B80 /* AlbumAccessCell.swift */,
+			);
+			path = AlbumAccess;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF838D5C253D6CAC00766B80 /* AlbumAccess.storyboard in Resources */,
 				DF838D4C253D5F3200766B80 /* DatePicker.storyboard in Resources */,
 				DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */,
 				DF838D54253D626000766B80 /* ImagePicker.storyboard in Resources */,
@@ -231,7 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF838D50253D625700766B80 /* ImagePickerViewController.swift in Sources */,
+				DF838D66253D6FF500766B80 /* AlbumAccessCell.swift in Sources */,
 				DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */,
+				DF838D5F253D6CB400766B80 /* AlbumAccessViewController.swift in Sources */,
 				DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */,
 				DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */,
 				DF838D40253D5AD300766B80 /* FontPickerViewController.swift in Sources */,
