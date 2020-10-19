@@ -36,7 +36,8 @@ class HomeViewController: UICollectionViewController {
             CollectionItem(title: "UIBarButtonItem + Menu", storyboardName: "BarButtonItem"),
             CollectionItem(title: "UIColorPicker", storyboardName: "ColorPicker"),
             CollectionItem(title: "UIFontPicker", storyboardName: "FontPicker"),
-            CollectionItem(title: "DatePicker", storyboardName: "DatePicker")
+            CollectionItem(title: "DatePicker", storyboardName: "DatePicker"),
+            CollectionItem(title: "ImagePicker", storyboardName: "ImagePicker")
         ]
     }()
     

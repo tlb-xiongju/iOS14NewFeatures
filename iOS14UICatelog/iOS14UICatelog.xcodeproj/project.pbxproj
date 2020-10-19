@@ -23,6 +23,8 @@
 		DF838D40253D5AD300766B80 /* FontPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D3F253D5AD300766B80 /* FontPickerViewController.swift */; };
 		DF838D48253D5F2A00766B80 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D47253D5F2A00766B80 /* DatePickerViewController.swift */; };
 		DF838D4C253D5F3200766B80 /* DatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D4B253D5F3200766B80 /* DatePicker.storyboard */; };
+		DF838D50253D625700766B80 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D4F253D625700766B80 /* ImagePickerViewController.swift */; };
+		DF838D54253D626000766B80 /* ImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D53253D626000766B80 /* ImagePicker.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		DF838D44253D5B4000766B80 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DF838D47253D5F2A00766B80 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		DF838D4B253D5F3200766B80 /* DatePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePicker.storyboard; sourceTree = "<group>"; };
+		DF838D4F253D625700766B80 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		DF838D53253D626000766B80 /* ImagePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePicker.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		DF838D07253D2EB700766B80 /* iOS14UICatelog */ = {
 			isa = PBXGroup;
 			children = (
+				DF838D4E253D624900766B80 /* ImagePicker */,
 				DF838D46253D5F1700766B80 /* DatePicker */,
 				DF838D3B253D5AC100766B80 /* FontPicker */,
 				DF838D33253D578900766B80 /* ColorPicker */,
@@ -137,6 +142,15 @@
 				DF838D4B253D5F3200766B80 /* DatePicker.storyboard */,
 			);
 			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		DF838D4E253D624900766B80 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DF838D4F253D625700766B80 /* ImagePickerViewController.swift */,
+				DF838D53253D626000766B80 /* ImagePicker.storyboard */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +213,7 @@
 			files = (
 				DF838D4C253D5F3200766B80 /* DatePicker.storyboard in Resources */,
 				DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */,
+				DF838D54253D626000766B80 /* ImagePicker.storyboard in Resources */,
 				DF838D28253D527A00766B80 /* Button.storyboard in Resources */,
 				DF838D3D253D5ACC00766B80 /* FontPicker.storyboard in Resources */,
 				DF838D15253D2EB900766B80 /* LaunchScreen.storyboard in Resources */,
@@ -215,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF838D50253D625700766B80 /* ImagePickerViewController.swift in Sources */,
 				DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */,
 				DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */,
 				DF838D35253D579900766B80 /* ColorPickerViewController.swift in Sources */,
