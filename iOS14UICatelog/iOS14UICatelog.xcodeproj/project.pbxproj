@@ -15,6 +15,8 @@
 		DF838D15253D2EB900766B80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D13253D2EB900766B80 /* LaunchScreen.storyboard */; };
 		DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D23253D526A00766B80 /* ButtonViewController.swift */; };
 		DF838D28253D527A00766B80 /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D27253D527A00766B80 /* Button.storyboard */; };
+		DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF838D2C253D562F00766B80 /* BarButtonItemViewController.swift */; };
+		DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF838D30253D563900766B80 /* BarButtonItem.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DF838D16253D2EB900766B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF838D23253D526A00766B80 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		DF838D27253D527A00766B80 /* Button.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Button.storyboard; sourceTree = "<group>"; };
+		DF838D2C253D562F00766B80 /* BarButtonItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButtonItemViewController.swift; sourceTree = "<group>"; };
+		DF838D30253D563900766B80 /* BarButtonItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarButtonItem.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		DF838D07253D2EB700766B80 /* iOS14UICatelog */ = {
 			isa = PBXGroup;
 			children = (
+				DF838D2B253D561500766B80 /* UIBarButtonItem+Menu */,
 				DF838D22253D524900766B80 /* UIButton+Menu */,
 				DF838D08253D2EB700766B80 /* AppDelegate.swift */,
 				DF838D0A253D2EB700766B80 /* SceneDelegate.swift */,
@@ -79,6 +84,15 @@
 				DF838D27253D527A00766B80 /* Button.storyboard */,
 			);
 			path = "UIButton+Menu";
+			sourceTree = "<group>";
+		};
+		DF838D2B253D561500766B80 /* UIBarButtonItem+Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DF838D2C253D562F00766B80 /* BarButtonItemViewController.swift */,
+				DF838D30253D563900766B80 /* BarButtonItem.storyboard */,
+			);
+			path = "UIBarButtonItem+Menu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF838D31253D563900766B80 /* BarButtonItem.storyboard in Resources */,
 				DF838D28253D527A00766B80 /* Button.storyboard in Resources */,
 				DF838D15253D2EB900766B80 /* LaunchScreen.storyboard in Resources */,
 				DF838D12253D2EB900766B80 /* Assets.xcassets in Resources */,
@@ -152,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF838D2D253D562F00766B80 /* BarButtonItemViewController.swift in Sources */,
 				DF838D24253D526A00766B80 /* ButtonViewController.swift in Sources */,
 				DF838D0D253D2EB700766B80 /* HomeViewController.swift in Sources */,
 				DF838D09253D2EB700766B80 /* AppDelegate.swift in Sources */,

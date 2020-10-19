@@ -32,7 +32,8 @@ class HomeViewController: UICollectionViewController {
     
     private lazy var collectionItems: [CollectionItem] = {
         [
-            CollectionItem(title: "UIButton + Menu", storyboardName: "Button")
+            CollectionItem(title: "UIButton + Menu", storyboardName: "Button"),
+            CollectionItem(title: "UIBarButtonItem + Menu", storyboardName: "BarButtonItem"),
         ]
     }()
     
