@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct PhotoView: View {
-    var image: UIImage
+    var imageName: String
     var body: some View {
-        Image(uiImage: image)
+        URLImageView(withURL: imageName)
     }
 }
+
+

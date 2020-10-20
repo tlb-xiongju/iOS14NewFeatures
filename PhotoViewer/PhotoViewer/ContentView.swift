@@ -9,14 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PageView([
-            Text("Hello, world!")
-                .padding(),
-            Text("Hello, world!")
-                .padding(),
-            Text("Hello, world!")
-                .padding()
-        ])
+        PageView(
+            ImageSources.links.map {
+                PhotoView(imageName: $0)
+            }
+        )
     }
 }
 
