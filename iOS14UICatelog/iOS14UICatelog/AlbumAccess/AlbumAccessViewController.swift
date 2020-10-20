@@ -61,12 +61,6 @@ class AlbumAccessViewController: UICollectionViewController {
         }, for: idx, item: item)
     }
     
-    private lazy var fetchResult: PHFetchResult<PHAsset> = {
-        let options = PHFetchOptions()
-        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-        return PHAsset.fetchAssets(with: options)
-    }()
-    
     private lazy var snapshot = NSDiffableDataSourceSectionSnapshot<AlbumItem>()
     
     override func viewDidLoad() {
@@ -82,7 +76,10 @@ class AlbumAccessViewController: UICollectionViewController {
         snapshot.deleteAll()
         
         var assets: [PHAsset] = []
-        fetchResult.enumerateObjects { asset, index, stop in
+        let options = PHFetchOptions()
+        options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+        
+        PHAsset.fetchAssets(with: options).enumerateObjects { asset, index, stop in
             assets.append(asset)
         }
         
