@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         PageView(
-            ImageSources.links.map {
-                PhotoView(imageName: $0)
+            ImageSources.urls.map {
+                PhotoView(imageURL: $0)
             }
         )
     }

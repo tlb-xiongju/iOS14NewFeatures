@@ -10,9 +10,9 @@ import Foundation
 import Combine
 
 struct ImageSources {
-    static let links: [String] = {
+    static let urls: [URL] = {
         let prefix = "https://raw.githubusercontent.com/onevcat/Kingfisher-TestImages/master/DemoAppImage/Loading"
-        return (1...10).map { "\(prefix)/kingfisher-\($0).jpg" }
+        return (1...10).map { URL(string: "\(prefix)/kingfisher-\($0).jpg")! }
     }()
 }
 
@@ -24,15 +24,14 @@ class ImageLoader: ObservableObject {
         }
     }
 
-    init(urlString:String) {
-        guard let url = URL(string: urlString) else { return }
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+    init(_ url: URL) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             DispatchQueue.main.async {
                 self.data = data
             }
         }
-        task.resume()
+        .resume()
     }
 }
 
@@ -40,17 +39,17 @@ struct URLImageView: View {
     @ObservedObject var imageLoader:ImageLoader
     @State var image:UIImage = UIImage()
 
-    init(withURL url:String) {
-        imageLoader = ImageLoader(urlString:url)
+    init(_ url: URL) {
+        imageLoader = ImageLoader(url)
     }
 
     var body: some View {
-            Image(uiImage: image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:300, height:300)
-                .onReceive(imageLoader.didChange) { data in
+        Image(uiImage: image)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width:300, height:300)
+            .onReceive(imageLoader.didChange) { data in
                 self.image = UIImage(data: data) ?? UIImage()
-        }
+            }
     }
 }
