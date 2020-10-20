@@ -11,6 +11,10 @@
 		DF61A4B0253E9BB800A76621 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4AF253E9BB800A76621 /* ContentView.swift */; };
 		DF61A4B2253E9BBA00A76621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF61A4B1253E9BBA00A76621 /* Assets.xcassets */; };
 		DF61A4B5253E9BBA00A76621 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF61A4B4253E9BBA00A76621 /* Preview Assets.xcassets */; };
+		DF61A4BF253E9DEE00A76621 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4BE253E9DEE00A76621 /* PageView.swift */; };
+		DF61A4C3253E9E2500A76621 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C2253E9E2500A76621 /* PageControl.swift */; };
+		DF61A4C6253E9E4300A76621 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C5253E9E4300A76621 /* PageViewController.swift */; };
+		DF61A4CA253E9ECC00A76621 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C9253E9ECC00A76621 /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		DF61A4B1253E9BBA00A76621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF61A4B4253E9BBA00A76621 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF61A4B6253E9BBA00A76621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF61A4BE253E9DEE00A76621 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		DF61A4C2253E9E2500A76621 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		DF61A4C5253E9E4300A76621 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DF61A4C9253E9ECC00A76621 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 		DF61A4AC253E9BB800A76621 /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DF61A4BD253E9DD200A76621 /* PageView */,
 				DF61A4AD253E9BB800A76621 /* PhotoViewerApp.swift */,
 				DF61A4AF253E9BB800A76621 /* ContentView.swift */,
 				DF61A4B1253E9BBA00A76621 /* Assets.xcassets */,
@@ -67,6 +76,17 @@
 				DF61A4B4253E9BBA00A76621 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF61A4BD253E9DD200A76621 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				DF61A4BE253E9DEE00A76621 /* PageView.swift */,
+				DF61A4C2253E9E2500A76621 /* PageControl.swift */,
+				DF61A4C5253E9E4300A76621 /* PageViewController.swift */,
+				DF61A4C9253E9ECC00A76621 /* PhotoView.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF61A4B0253E9BB800A76621 /* ContentView.swift in Sources */,
+				DF61A4C6253E9E4300A76621 /* PageViewController.swift in Sources */,
+				DF61A4BF253E9DEE00A76621 /* PageView.swift in Sources */,
+				DF61A4CA253E9ECC00A76621 /* PhotoView.swift in Sources */,
+				DF61A4C3253E9E2500A76621 /* PageControl.swift in Sources */,
 				DF61A4AE253E9BB800A76621 /* PhotoViewerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
