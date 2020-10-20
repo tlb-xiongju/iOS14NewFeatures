@@ -16,8 +16,10 @@ class AlbumAccessCell: UICollectionViewCell {
         super.init(frame: frame)
         
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         contentView.addSubview(imageView)
-        let inset = CGFloat(1)
+        let inset = CGFloat(3)
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: inset),
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -inset),

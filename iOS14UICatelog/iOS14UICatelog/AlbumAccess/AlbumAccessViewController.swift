@@ -67,18 +67,40 @@ class AlbumAccessViewController: UICollectionViewController {
         return PHAsset.fetchAssets(with: options)
     }()
     
+    private lazy var snapshot = NSDiffableDataSourceSectionSnapshot<AlbumItem>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.collectionViewLayout = layout
+        PHPhotoLibrary.shared().register(self)
         
-        var snapshot = NSDiffableDataSourceSectionSnapshot<AlbumItem>()
+        loadImages()
+    }
+    
+    private func loadImages() {
+        snapshot.deleteAll()
+        
         var assets: [PHAsset] = []
-        
         fetchResult.enumerateObjects { asset, index, stop in
             assets.append(asset)
         }
         
         snapshot.append(assets.map(AlbumItem.init(asset:)))
+        dataSource.apply(snapshot, to: .main)
+    }
+    
+    deinit {
+        PHPhotoLibrary.shared().unregisterChangeObserver(self)
     }
 }
+
+extension AlbumAccessViewController: PHPhotoLibraryChangeObserver {
+    func photoLibraryDidChange(_ changeInstance: PHChange) {
+        DispatchQueue.main.sync {
+            loadImages()
+        }
+    }
+}
+
+
