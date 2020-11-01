@@ -28,6 +28,9 @@ class AlbumAccessViewController: UICollectionViewController {
         }
     }
     
+    typealias DataSource = UICollectionViewDiffableDataSource<Section,AlbumItem>
+    typealias CellRegistration = UICollectionView.CellRegistration<AlbumAccessCell, AlbumItem>
+    
     private lazy var layout: UICollectionViewCompositionalLayout = {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.2),
                                              heightDimension: .fractionalHeight(1.0))
@@ -39,15 +42,12 @@ class AlbumAccessViewController: UICollectionViewController {
                                                          subitems: [item])
 
         let section = NSCollectionLayoutSection(group: group)
-        
         let layout = UICollectionViewCompositionalLayout(section: section)
-        
         return layout
     }()
     
-    private lazy var dataSource = UICollectionViewDiffableDataSource<Section,AlbumItem>(collectionView: collectionView) { cv, idx, item in
-        cv.dequeueConfiguredReusableCell(using: UICollectionView.CellRegistration<AlbumAccessCell, AlbumItem> { cell, indexPath, mItem in
-            
+    private lazy var dataSource = DataSource(collectionView: collectionView) { cv, idx, item in
+        cv.dequeueConfiguredReusableCell(using: CellRegistration { cell, indexPath, mItem in
             let options = PHImageRequestOptions()
             options.isSynchronous = true
             options.deliveryMode = .highQualityFormat
@@ -56,8 +56,6 @@ class AlbumAccessViewController: UICollectionViewController {
                 guard let image = image else { return }
                 cell.imageView.image = image
             }
-            
-            
         }, for: idx, item: item)
     }
     
