@@ -21,9 +21,19 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Xis-XI-bcK"/>
                                 </constraints>
-                                <state key="normal" title="Tap to choose a image"/>
+                                <state key="normal" title="Tap to choose a image (UIImagePicker)"/>
                                 <connections>
-                                    <action selector="presentImagePicker:" destination="h0v-Q8-FMq" eventType="touchUpInside" id="nBP-9a-Rf7"/>
+                                    <action selector="presentImagePicker:" destination="h0v-Q8-FMq" eventType="touchUpInside" id="NxG-dt-Yg8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWP-1r-85o">
+                                <rect key="frame" x="0.0" y="104" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zJS-uw-3Q7"/>
+                                </constraints>
+                                <state key="normal" title="Tap to choose a image (PHPicker)"/>
+                                <connections>
+                                    <action selector="presentPHImagePicker:" destination="h0v-Q8-FMq" eventType="touchUpInside" id="YLi-md-0CB"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kXv-1c-9cz">
@@ -37,16 +47,18 @@
                         <viewLayoutGuide key="safeArea" id="2KX-wL-ahd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aWP-1r-85o" firstAttribute="leading" secondItem="2KX-wL-ahd" secondAttribute="leading" id="2Fz-nw-u8X"/>
                             <constraint firstItem="2KX-wL-ahd" firstAttribute="trailing" secondItem="pia-3x-Xe8" secondAttribute="trailing" id="2Zd-U5-QFA"/>
                             <constraint firstItem="kXv-1c-9cz" firstAttribute="leading" secondItem="2KX-wL-ahd" secondAttribute="leading" constant="24" id="7kB-ej-0Ny"/>
+                            <constraint firstAttribute="trailing" secondItem="aWP-1r-85o" secondAttribute="trailing" id="Lur-wM-NVW"/>
                             <constraint firstItem="pia-3x-Xe8" firstAttribute="top" secondItem="2KX-wL-ahd" secondAttribute="top" id="MqR-Ud-6CQ"/>
                             <constraint firstItem="kXv-1c-9cz" firstAttribute="centerY" secondItem="tAr-9w-CDS" secondAttribute="centerY" id="VqW-hM-LNn"/>
                             <constraint firstItem="2KX-wL-ahd" firstAttribute="trailing" secondItem="kXv-1c-9cz" secondAttribute="trailing" constant="24" id="lq1-xg-1xW"/>
                             <constraint firstItem="pia-3x-Xe8" firstAttribute="leading" secondItem="2KX-wL-ahd" secondAttribute="leading" id="nI5-N1-z6y"/>
+                            <constraint firstItem="aWP-1r-85o" firstAttribute="top" secondItem="pia-3x-Xe8" secondAttribute="bottom" id="oKh-cU-AiH"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imagePickerButton" destination="pia-3x-Xe8" id="wJf-4s-lOa"/>
                         <outlet property="imageView" destination="kXv-1c-9cz" id="awW-CA-wT8"/>
                     </connections>
                 </viewController>
