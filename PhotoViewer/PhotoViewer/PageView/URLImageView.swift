@@ -9,7 +9,7 @@ import SwiftUI
 
 struct URLImageView: View {
     @ObservedObject var imageLoader:ImageLoader
-    @State var image:UIImage = UIImage()
+    @State var image: UIImage = UIImage()
 
     init(_ url: URL) {
         imageLoader = ImageLoader(url)
@@ -20,7 +20,7 @@ struct URLImageView: View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width:300, height:300)
-            .onReceive(imageLoader.didChange) { data in
+            .onReceive(imageLoader.didFinishLoad) { data in
                 self.image = UIImage(data: data) ?? UIImage()
             }
     }

@@ -9,26 +9,45 @@ import SwiftUI
 import Foundation
 import Combine
 
+let prefix = "https://raw.githubusercontent.com/onevcat/Kingfisher-TestImages/master/DemoAppImage/Loading"
+
+struct Kingfisher: Hashable, Identifiable {
+    let name: String
+    let photoURL: URL
+    
+    var id: String {
+        name
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+    }
+    
+    static let all: [Kingfisher] = ImageSources.urls.map {
+        Kingfisher(name: $0.name, photoURL: $0)
+    }
+}
+
 struct ImageSources {
     static let urls: [URL] = {
-        let prefix = "https://raw.githubusercontent.com/onevcat/Kingfisher-TestImages/master/DemoAppImage/Loading"
         return (1...10).map { URL(string: "\(prefix)/kingfisher-\($0).jpg")! }
     }()
 }
 
-class ImageLoader: ObservableObject {
-    var didChange = PassthroughSubject<Data, Never>()
-    var data = Data() {
-        didSet {
-            didChange.send(data)
-        }
+extension URL {
+    var name: String {
+        absoluteString.components(separatedBy: "/").last!
     }
+}
+
+class ImageLoader: ObservableObject {
+    var didFinishLoad = PassthroughSubject<Data, Never>()
 
     init(_ url: URL) {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             DispatchQueue.main.async {
-                self.data = data
+                self.didFinishLoad.send(data)
             }
         }
         .resume()

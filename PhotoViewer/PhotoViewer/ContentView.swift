@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         PageView(
-            ImageSources.urls.map {
-                PhotoView(imageURL: $0)
+            Kingfisher.all.map {
+                PhotoView(imageURL: $0.photoURL)
             }
         )
     }

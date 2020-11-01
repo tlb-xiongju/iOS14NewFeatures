@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct PhotoView: View {
-    var imageURL: URL
+    var kingfisher: Kingfisher
     var body: some View {
-        URLImageView(imageURL)
+        VStack {
+            URLImageView(imageURL)
+        }
     }
 }
 
