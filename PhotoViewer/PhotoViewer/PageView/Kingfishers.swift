@@ -26,6 +26,7 @@ struct Kingfisher: Hashable, Identifiable {
     static let all: [Kingfisher] = ImageSources.urls.map {
         Kingfisher(name: $0.name, photoURL: $0)
     }
+    static let `default` = Kingfisher(name: ImageSources.urls.first!.name, photoURL: ImageSources.urls.first!)
 }
 
 struct ImageSources {

@@ -15,21 +15,20 @@
 		DF61A4C3253E9E2500A76621 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C2253E9E2500A76621 /* PageControl.swift */; };
 		DF61A4C6253E9E4300A76621 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C5253E9E4300A76621 /* PageViewController.swift */; };
 		DF61A4CA253E9ECC00A76621 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C9253E9ECC00A76621 /* PhotoView.swift */; };
-		DF61A4D1253EA12F00A76621 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4D0253EA12F00A76621 /* ImageLoader.swift */; };
+		DF61A4D1253EA12F00A76621 /* Kingfishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4D0253EA12F00A76621 /* Kingfishers.swift */; };
 		DF61A4EC253EA9B300A76621 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61A4EB253EA9B300A76621 /* WidgetKit.framework */; };
 		DF61A4EE253EA9B300A76621 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61A4ED253EA9B300A76621 /* SwiftUI.framework */; };
 		DF61A4F1253EA9B400A76621 /* PhotoPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4F0253EA9B400A76621 /* PhotoPreviewer.swift */; };
 		DF61A4F4253EA9B500A76621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF61A4F3253EA9B500A76621 /* Assets.xcassets */; };
-		DF61A4F6253EA9B500A76621 /* PhotoPreviewer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4F2253EA9B400A76621 /* PhotoPreviewer.intentdefinition */; };
-		DF61A4F7253EA9B500A76621 /* PhotoPreviewer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4F2253EA9B400A76621 /* PhotoPreviewer.intentdefinition */; };
 		DF61A4FA253EA9B500A76621 /* PhotoPreviewerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF61A4E9253EA9B300A76621 /* PhotoPreviewerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DF61A501253EAB7900A76621 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4BE253E9DEE00A76621 /* PageView.swift */; };
-		DF61A504253EAB8000A76621 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C9253E9ECC00A76621 /* PhotoView.swift */; };
 		DF61A507253EABE800A76621 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C2253E9E2500A76621 /* PageControl.swift */; };
 		DF61A50A253EABEA00A76621 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C5253E9E4300A76621 /* PageViewController.swift */; };
 		DF61A50E253EAC0F00A76621 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A50D253EAC0F00A76621 /* URLImageView.swift */; };
 		DF61A511253EAC1700A76621 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A50D253EAC0F00A76621 /* URLImageView.swift */; };
-		DF61A514253EAC2100A76621 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4D0253EA12F00A76621 /* ImageLoader.swift */; };
+		DF61A514253EAC2100A76621 /* Kingfishers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4D0253EA12F00A76621 /* Kingfishers.swift */; };
+		DFF3FE79254F7D8C0034B6C1 /* PhotoSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FE6B254EF1790034B6C1 /* PhotoSelection.intentdefinition */; };
+		DFF95210254EE26900A082D6 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF61A4C9253E9ECC00A76621 /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +66,17 @@
 		DF61A4C2253E9E2500A76621 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		DF61A4C5253E9E4300A76621 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		DF61A4C9253E9ECC00A76621 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
-		DF61A4D0253EA12F00A76621 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = PhotoViewer/PageView/ImageLoader.swift; sourceTree = SOURCE_ROOT; };
+		DF61A4D0253EA12F00A76621 /* Kingfishers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kingfishers.swift; path = PhotoViewer/PageView/Kingfishers.swift; sourceTree = SOURCE_ROOT; };
 		DF61A4E9253EA9B300A76621 /* PhotoPreviewerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoPreviewerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF61A4EB253EA9B300A76621 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DF61A4ED253EA9B300A76621 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		DF61A4F0253EA9B400A76621 /* PhotoPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewer.swift; sourceTree = "<group>"; };
-		DF61A4F2253EA9B400A76621 /* PhotoPreviewer.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PhotoPreviewer.intentdefinition; sourceTree = "<group>"; };
 		DF61A4F3253EA9B500A76621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF61A4F5253EA9B500A76621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF61A50D253EAC0F00A76621 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		DFF3FE6B254EF1790034B6C1 /* PhotoSelection.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PhotoSelection.intentdefinition; sourceTree = "<group>"; };
+		DFF95213254EE32C00A082D6 /* PhotoViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoViewer.entitlements; sourceTree = "<group>"; };
+		DFF95218254EE37A00A082D6 /* PhotoPreviewerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhotoPreviewerExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		DF61A4A1253E9BB800A76621 = {
 			isa = PBXGroup;
 			children = (
+				DFF95218254EE37A00A082D6 /* PhotoPreviewerExtension.entitlements */,
 				DF61A4AC253E9BB800A76621 /* PhotoViewer */,
 				DF61A4EF253EA9B400A76621 /* PhotoPreviewer */,
 				DF61A4EA253EA9B300A76621 /* Frameworks */,
@@ -120,10 +122,13 @@
 		DF61A4AC253E9BB800A76621 /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DFF95213254EE32C00A082D6 /* PhotoViewer.entitlements */,
 				DF61A4CF253EA11C00A76621 /* Data */,
 				DF61A4BD253E9DD200A76621 /* PageView */,
-				DF61A4AD253E9BB800A76621 /* PhotoViewerApp.swift */,
+				DF61A50D253EAC0F00A76621 /* URLImageView.swift */,
+				DF61A4C9253E9ECC00A76621 /* PhotoView.swift */,
 				DF61A4AF253E9BB800A76621 /* ContentView.swift */,
+				DF61A4AD253E9BB800A76621 /* PhotoViewerApp.swift */,
 				DF61A4B1253E9BBA00A76621 /* Assets.xcassets */,
 				DF61A4B6253E9BBA00A76621 /* Info.plist */,
 				DF61A4B3253E9BBA00A76621 /* Preview Content */,
@@ -145,8 +150,6 @@
 				DF61A4BE253E9DEE00A76621 /* PageView.swift */,
 				DF61A4C2253E9E2500A76621 /* PageControl.swift */,
 				DF61A4C5253E9E4300A76621 /* PageViewController.swift */,
-				DF61A4C9253E9ECC00A76621 /* PhotoView.swift */,
-				DF61A50D253EAC0F00A76621 /* URLImageView.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 		DF61A4CF253EA11C00A76621 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				DF61A4D0253EA12F00A76621 /* ImageLoader.swift */,
+				DF61A4D0253EA12F00A76621 /* Kingfishers.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -172,9 +175,9 @@
 			isa = PBXGroup;
 			children = (
 				DF61A4F0253EA9B400A76621 /* PhotoPreviewer.swift */,
-				DF61A4F2253EA9B400A76621 /* PhotoPreviewer.intentdefinition */,
 				DF61A4F3253EA9B500A76621 /* Assets.xcassets */,
 				DF61A4F5253EA9B500A76621 /* Info.plist */,
+				DFF3FE6B254EF1790034B6C1 /* PhotoSelection.intentdefinition */,
 			);
 			path = PhotoPreviewer;
 			sourceTree = "<group>";
@@ -279,11 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF61A4D1253EA12F00A76621 /* ImageLoader.swift in Sources */,
+				DF61A4D1253EA12F00A76621 /* Kingfishers.swift in Sources */,
 				DF61A4B0253E9BB800A76621 /* ContentView.swift in Sources */,
 				DF61A50E253EAC0F00A76621 /* URLImageView.swift in Sources */,
 				DF61A4C6253E9E4300A76621 /* PageViewController.swift in Sources */,
-				DF61A4F7253EA9B500A76621 /* PhotoPreviewer.intentdefinition in Sources */,
 				DF61A4BF253E9DEE00A76621 /* PageView.swift in Sources */,
 				DF61A4CA253E9ECC00A76621 /* PhotoView.swift in Sources */,
 				DF61A4C3253E9E2500A76621 /* PageControl.swift in Sources */,
@@ -295,14 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF3FE79254F7D8C0034B6C1 /* PhotoSelection.intentdefinition in Sources */,
 				DF61A511253EAC1700A76621 /* URLImageView.swift in Sources */,
 				DF61A507253EABE800A76621 /* PageControl.swift in Sources */,
 				DF61A4F1253EA9B400A76621 /* PhotoPreviewer.swift in Sources */,
 				DF61A501253EAB7900A76621 /* PageView.swift in Sources */,
 				DF61A50A253EABEA00A76621 /* PageViewController.swift in Sources */,
-				DF61A4F6253EA9B500A76621 /* PhotoPreviewer.intentdefinition in Sources */,
-				DF61A514253EAC2100A76621 /* ImageLoader.swift in Sources */,
-				DF61A504253EAB8000A76621 /* PhotoView.swift in Sources */,
+				DF61A514253EAC2100A76621 /* Kingfishers.swift in Sources */,
+				DFF95210254EE26900A082D6 /* PhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,10 +441,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhotoViewer/PhotoViewer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -450,9 +453,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.PhotoViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = xiong.ju.photos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = WildCardDevTLBTEC;
+				PROVISIONING_PROFILE_SPECIFIER = PhotosViewer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,10 +467,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PhotoViewer/PhotoViewer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -475,9 +479,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.PhotoViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = xiong.ju.photos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = WildCardDevTLBTEC;
+				PROVISIONING_PROFILE_SPECIFIER = PhotosViewer;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,17 +492,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhotoPreviewerExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				INFOPLIST_FILE = PhotoPreviewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.PhotoViewer.PhotoPreviewer;
+				PRODUCT_BUNDLE_IDENTIFIER = xiong.ju.photos.previewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "widget for demo";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,17 +516,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PhotoPreviewerExtension.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 375AJZ9MFR;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				INFOPLIST_FILE = PhotoPreviewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.PhotoViewer.PhotoPreviewer;
+				PRODUCT_BUNDLE_IDENTIFIER = xiong.ju.photos.previewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "widget for demo";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

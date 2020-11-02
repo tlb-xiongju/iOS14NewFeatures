@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         PageView(
             Kingfisher.all.map {
-                PhotoView(imageURL: $0.photoURL)
+                PhotoView(kingfisher: $0)
             }
         )
     }

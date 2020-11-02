@@ -10,10 +10,21 @@ import SwiftUI
 struct PhotoView: View {
     var kingfisher: Kingfisher
     var body: some View {
-        VStack {
-            URLImageView(imageURL)
+        ZStack {
+            URLImageView(kingfisher.photoURL)
+            Text(kingfisher.name)
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(.red)
         }
     }
 }
 
-
+struct PhotoView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            PhotoView(kingfisher: .default)
+                .previewLayout(.fixed(width: 300, height: 300))
+        }
+    }
+}
