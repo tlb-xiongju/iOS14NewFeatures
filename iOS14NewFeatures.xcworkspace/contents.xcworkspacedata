@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PhotoViewer/PhotoViewer.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:iOS14UICatelog/iOS14UICatelog.xcodeproj">
    </FileRef>
 </Workspace>
