@@ -15,10 +15,7 @@ class IntentHandler: INExtension, ConfigurationIntentHandling {
             Cuty(identifier: $0.name, display: $0.name)
         }
         
-        print("cuties: \(cuties.description)")
-        
-        completion(INObjectCollection(items: cuties), nil)
-        
+        completion(INObjectCollection(items: cuties), nil)   
     }
     
     override func handler(for intent: INIntent) -> Any {
