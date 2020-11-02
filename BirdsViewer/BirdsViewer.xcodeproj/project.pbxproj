@@ -16,7 +16,43 @@
 		DFF3FF71254F9BAF0034B6C1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF6E254F9BAF0034B6C1 /* PageView.swift */; };
 		DFF3FF72254F9BAF0034B6C1 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF6F254F9BAF0034B6C1 /* PageControl.swift */; };
 		DFF3FF76254F9C010034B6C1 /* BirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF75254F9C010034B6C1 /* BirdView.swift */; };
+		DFF3FF85254FA26F0034B6C1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3FF84254FA26F0034B6C1 /* WidgetKit.framework */; };
+		DFF3FF87254FA26F0034B6C1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3FF86254FA26F0034B6C1 /* SwiftUI.framework */; };
+		DFF3FF8A254FA26F0034B6C1 /* BirdsPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF89254FA26F0034B6C1 /* BirdsPreviewer.swift */; };
+		DFF3FF8D254FA2720034B6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF3FF8C254FA2720034B6C1 /* Assets.xcassets */; };
+		DFF3FF8F254FA2720034B6C1 /* BirdsPreviewer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF8B254FA26F0034B6C1 /* BirdsPreviewer.intentdefinition */; };
+		DFF3FF93254FA2720034B6C1 /* BirdsPreviewerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFF3FF82254FA26F0034B6C1 /* BirdsPreviewerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFF3FF9A254FA3460034B6C1 /* Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF5B254F9B230034B6C1 /* Birds.swift */; };
+		DFF3FF9D254FA34B0034B6C1 /* BirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF75254F9C010034B6C1 /* BirdView.swift */; };
+		DFF3FFB4254FAA430034B6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF3FF4D254F9B010034B6C1 /* Assets.xcassets */; };
+		DFF3FFB7254FAB6A0034B6C1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF6E254F9BAF0034B6C1 /* PageView.swift */; };
+		DFF3FFBA254FAB6C0034B6C1 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF6F254F9BAF0034B6C1 /* PageControl.swift */; };
+		DFF3FFBB254FAB6F0034B6C1 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF6D254F9BAF0034B6C1 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFF3FF91254FA2720034B6C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF3FF3E254F9AFF0034B6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFF3FF81254FA26F0034B6C1;
+			remoteInfo = BirdsPreviewerExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFF3FF97254FA2720034B6C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFF3FF93254FA2720034B6C1 /* BirdsPreviewerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DFF3FF46254F9AFF0034B6C1 /* BirdsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +66,13 @@
 		DFF3FF6E254F9BAF0034B6C1 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		DFF3FF6F254F9BAF0034B6C1 /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		DFF3FF75254F9C010034B6C1 /* BirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdView.swift; sourceTree = "<group>"; };
+		DFF3FF82254FA26F0034B6C1 /* BirdsPreviewerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BirdsPreviewerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF3FF84254FA26F0034B6C1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DFF3FF86254FA26F0034B6C1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DFF3FF89254FA26F0034B6C1 /* BirdsPreviewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsPreviewer.swift; sourceTree = "<group>"; };
+		DFF3FF8B254FA26F0034B6C1 /* BirdsPreviewer.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BirdsPreviewer.intentdefinition; sourceTree = "<group>"; };
+		DFF3FF8C254FA2720034B6C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFF3FF8E254FA2720034B6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +83,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFF3FF7F254FA26F0034B6C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF3FF87254FA26F0034B6C1 /* SwiftUI.framework in Frameworks */,
+				DFF3FF85254FA26F0034B6C1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -47,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				DFF3FF48254F9AFF0034B6C1 /* BirdsViewer */,
+				DFF3FF88254FA26F0034B6C1 /* BirdsPreviewer */,
+				DFF3FF83254FA26F0034B6C1 /* Frameworks */,
 				DFF3FF47254F9AFF0034B6C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF3FF46254F9AFF0034B6C1 /* BirdsViewer.app */,
+				DFF3FF82254FA26F0034B6C1 /* BirdsPreviewerExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +163,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DFF3FF83254FA26F0034B6C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3FF84254FA26F0034B6C1 /* WidgetKit.framework */,
+				DFF3FF86254FA26F0034B6C1 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF3FF88254FA26F0034B6C1 /* BirdsPreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3FF89254FA26F0034B6C1 /* BirdsPreviewer.swift */,
+				DFF3FF8B254FA26F0034B6C1 /* BirdsPreviewer.intentdefinition */,
+				DFF3FF8C254FA2720034B6C1 /* Assets.xcassets */,
+				DFF3FF8E254FA2720034B6C1 /* Info.plist */,
+			);
+			path = BirdsPreviewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,15 +193,34 @@
 				DFF3FF42254F9AFF0034B6C1 /* Sources */,
 				DFF3FF43254F9AFF0034B6C1 /* Frameworks */,
 				DFF3FF44254F9AFF0034B6C1 /* Resources */,
+				DFF3FF97254FA2720034B6C1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFF3FF92254FA2720034B6C1 /* PBXTargetDependency */,
 			);
 			name = BirdsViewer;
 			productName = BirdsViewer;
 			productReference = DFF3FF46254F9AFF0034B6C1 /* BirdsViewer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DFF3FF81254FA26F0034B6C1 /* BirdsPreviewerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF3FF94254FA2720034B6C1 /* Build configuration list for PBXNativeTarget "BirdsPreviewerExtension" */;
+			buildPhases = (
+				DFF3FF7E254FA26F0034B6C1 /* Sources */,
+				DFF3FF7F254FA26F0034B6C1 /* Frameworks */,
+				DFF3FF80254FA26F0034B6C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdsPreviewerExtension;
+			productName = BirdsPreviewerExtension;
+			productReference = DFF3FF82254FA26F0034B6C1 /* BirdsPreviewerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -138,6 +232,9 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					DFF3FF45254F9AFF0034B6C1 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DFF3FF81254FA26F0034B6C1 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -156,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				DFF3FF45254F9AFF0034B6C1 /* BirdsViewer */,
+				DFF3FF81254FA26F0034B6C1 /* BirdsPreviewerExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +265,15 @@
 			files = (
 				DFF3FF51254F9B010034B6C1 /* Preview Assets.xcassets in Resources */,
 				DFF3FF4E254F9B010034B6C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF3FF80254FA26F0034B6C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF3FFB4254FAA430034B6C1 /* Assets.xcassets in Resources */,
+				DFF3FF8D254FA2720034B6C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +294,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFF3FF7E254FA26F0034B6C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFF3FFB7254FAB6A0034B6C1 /* PageView.swift in Sources */,
+				DFF3FFBB254FAB6F0034B6C1 /* PageViewController.swift in Sources */,
+				DFF3FF8A254FA26F0034B6C1 /* BirdsPreviewer.swift in Sources */,
+				DFF3FFBA254FAB6C0034B6C1 /* PageControl.swift in Sources */,
+				DFF3FF9D254FA34B0034B6C1 /* BirdView.swift in Sources */,
+				DFF3FF8F254FA2720034B6C1 /* BirdsPreviewer.intentdefinition in Sources */,
+				DFF3FF9A254FA3460034B6C1 /* Birds.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFF3FF92254FA2720034B6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFF3FF81254FA26F0034B6C1 /* BirdsPreviewerExtension */;
+			targetProxy = DFF3FF91254FA2720034B6C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DFF3FF53254F9B010034B6C1 /* Debug */ = {
@@ -309,11 +438,13 @@
 		DFF3FF56254F9B010034B6C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BirdsViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BirdsViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -332,11 +463,13 @@
 		DFF3FF57254F9B010034B6C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BirdsViewer/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = BirdsViewer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -347,6 +480,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.BirdsViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFF3FF95254FA2720034B6C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
+				INFOPLIST_FILE = BirdsPreviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.BirdsViewer.BirdsPreviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFF3FF96254FA2720034B6C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVA557D4TC;
+				INFOPLIST_FILE = BirdsPreviewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.BirdsViewer.BirdsPreviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -369,6 +544,15 @@
 			buildConfigurations = (
 				DFF3FF56254F9B010034B6C1 /* Debug */,
 				DFF3FF57254F9B010034B6C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF3FF94254FA2720034B6C1 /* Build configuration list for PBXNativeTarget "BirdsPreviewerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF3FF95254FA2720034B6C1 /* Debug */,
+				DFF3FF96254FA2720034B6C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

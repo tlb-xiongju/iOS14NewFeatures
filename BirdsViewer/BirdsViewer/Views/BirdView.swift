@@ -12,7 +12,7 @@ struct BirdView: View {
     
     var body: some View {
         ZStack {
-            Image(uiImage: bird.img)
+            Image(uiImage: bird.img).fixedSize()
             Text(bird.name)
                 .font(.title)
                 .fontWeight(.black)

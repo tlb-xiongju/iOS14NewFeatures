@@ -20,4 +20,8 @@ struct Bird {
     static let frank =  Bird(name: "FRANK",   img: #imageLiteral(resourceName: "Image-5"))
     
     static let all: [Bird] = [alice, bobby, clark, daniel, eric, frank]
+    
+    static func bird(from name: String?) -> Bird? {
+        all.first { $0.name == name }
+    }
 }
