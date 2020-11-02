@@ -55,13 +55,8 @@ struct BirdsPreviewer: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             BirdsPreviewerEntryView(entry: entry)
         }
+        .configurationDisplayName("Cute bird")
+        .description("choose a cuty to display")
         .supportedFamilies([.systemSmall, .systemMedium])
-    }
-}
-
-struct BirdsPreviewer_Previews: PreviewProvider {
-    static var previews: some View {
-        BirdsPreviewerEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent(), bird: .alice))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

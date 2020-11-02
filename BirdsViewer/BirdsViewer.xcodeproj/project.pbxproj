@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF92B39C254FB71C004CAFCC /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF92B39B254FB71C004CAFCC /* IntentHandler.swift */; };
+		DF92B3A0254FB71C004CAFCC /* BirdsViewerIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DF92B399254FB71B004CAFCC /* BirdsViewerIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DF92B3B2254FB7A1004CAFCC /* Birds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF5B254F9B230034B6C1 /* Birds.swift */; };
+		DF92B3CA254FBB2A004CAFCC /* BirdsPreviewer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF8B254FA26F0034B6C1 /* BirdsPreviewer.intentdefinition */; };
+		DF92B3D4254FBB65004CAFCC /* BirdsPreviewer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF8B254FA26F0034B6C1 /* BirdsPreviewer.intentdefinition */; };
+		DF92B3D8254FBB8D004CAFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF3FF4D254F9B010034B6C1 /* Assets.xcassets */; };
 		DFF3FF4A254F9AFF0034B6C1 /* BirdsViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF49254F9AFF0034B6C1 /* BirdsViewerApp.swift */; };
 		DFF3FF4C254F9AFF0034B6C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3FF4B254F9AFF0034B6C1 /* ContentView.swift */; };
 		DFF3FF4E254F9B010034B6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF3FF4D254F9B010034B6C1 /* Assets.xcassets */; };
@@ -31,6 +37,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DF92B39E254FB71C004CAFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF3FF3E254F9AFF0034B6C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF92B398254FB71B004CAFCC;
+			remoteInfo = BirdsViewerIntentHandler;
+		};
 		DFF3FF91254FA2720034B6C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DFF3FF3E254F9AFF0034B6C1 /* Project object */;
@@ -47,6 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				DF92B3A0254FB71C004CAFCC /* BirdsViewerIntentHandler.appex in Embed App Extensions */,
 				DFF3FF93254FA2720034B6C1 /* BirdsPreviewerExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -55,6 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF92B399254FB71B004CAFCC /* BirdsViewerIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BirdsViewerIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF92B39B254FB71C004CAFCC /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DF92B39D254FB71C004CAFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF3FF46254F9AFF0034B6C1 /* BirdsViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdsViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF3FF49254F9AFF0034B6C1 /* BirdsViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsViewerApp.swift; sourceTree = "<group>"; };
 		DFF3FF4B254F9AFF0034B6C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DF92B396254FB71B004CAFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF3FF43254F9AFF0034B6C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,11 +119,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF92B39A254FB71B004CAFCC /* BirdsViewerIntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				DF92B39B254FB71C004CAFCC /* IntentHandler.swift */,
+				DF92B39D254FB71C004CAFCC /* Info.plist */,
+			);
+			path = BirdsViewerIntentHandler;
+			sourceTree = "<group>";
+		};
 		DFF3FF3D254F9AFF0034B6C1 = {
 			isa = PBXGroup;
 			children = (
 				DFF3FF48254F9AFF0034B6C1 /* BirdsViewer */,
 				DFF3FF88254FA26F0034B6C1 /* BirdsPreviewer */,
+				DF92B39A254FB71B004CAFCC /* BirdsViewerIntentHandler */,
 				DFF3FF83254FA26F0034B6C1 /* Frameworks */,
 				DFF3FF47254F9AFF0034B6C1 /* Products */,
 			);
@@ -110,6 +144,7 @@
 			children = (
 				DFF3FF46254F9AFF0034B6C1 /* BirdsViewer.app */,
 				DFF3FF82254FA26F0034B6C1 /* BirdsPreviewerExtension.appex */,
+				DF92B399254FB71B004CAFCC /* BirdsViewerIntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +221,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DF92B398254FB71B004CAFCC /* BirdsViewerIntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF92B3A3254FB71C004CAFCC /* Build configuration list for PBXNativeTarget "BirdsViewerIntentHandler" */;
+			buildPhases = (
+				DF92B395254FB71B004CAFCC /* Sources */,
+				DF92B396254FB71B004CAFCC /* Frameworks */,
+				DF92B397254FB71B004CAFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdsViewerIntentHandler;
+			productName = BirdsViewerIntentHandler;
+			productReference = DF92B399254FB71B004CAFCC /* BirdsViewerIntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DFF3FF45254F9AFF0034B6C1 /* BirdsViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFF3FF55254F9B010034B6C1 /* Build configuration list for PBXNativeTarget "BirdsViewer" */;
@@ -199,6 +251,7 @@
 			);
 			dependencies = (
 				DFF3FF92254FA2720034B6C1 /* PBXTargetDependency */,
+				DF92B39F254FB71C004CAFCC /* PBXTargetDependency */,
 			);
 			name = BirdsViewer;
 			productName = BirdsViewer;
@@ -231,6 +284,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					DF92B398254FB71B004CAFCC = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					DFF3FF45254F9AFF0034B6C1 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -254,11 +310,20 @@
 			targets = (
 				DFF3FF45254F9AFF0034B6C1 /* BirdsViewer */,
 				DFF3FF81254FA26F0034B6C1 /* BirdsPreviewerExtension */,
+				DF92B398254FB71B004CAFCC /* BirdsViewerIntentHandler */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DF92B397254FB71B004CAFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF92B3D8254FBB8D004CAFCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF3FF44254F9AFF0034B6C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +345,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DF92B395254FB71B004CAFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF92B39C254FB71C004CAFCC /* IntentHandler.swift in Sources */,
+				DF92B3B2254FB7A1004CAFCC /* Birds.swift in Sources */,
+				DF92B3CA254FBB2A004CAFCC /* BirdsPreviewer.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DFF3FF42254F9AFF0034B6C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +364,7 @@
 				DFF3FF72254F9BAF0034B6C1 /* PageControl.swift in Sources */,
 				DFF3FF76254F9C010034B6C1 /* BirdView.swift in Sources */,
 				DFF3FF4A254F9AFF0034B6C1 /* BirdsViewerApp.swift in Sources */,
+				DF92B3D4254FBB65004CAFCC /* BirdsPreviewer.intentdefinition in Sources */,
 				DFF3FF5C254F9B230034B6C1 /* Birds.swift in Sources */,
 				DFF3FF70254F9BAF0034B6C1 /* PageViewController.swift in Sources */,
 			);
@@ -311,6 +387,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DF92B39F254FB71C004CAFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF92B398254FB71B004CAFCC /* BirdsViewerIntentHandler */;
+			targetProxy = DF92B39E254FB71C004CAFCC /* PBXContainerItemProxy */;
+		};
 		DFF3FF92254FA2720034B6C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DFF3FF81254FA26F0034B6C1 /* BirdsPreviewerExtension */;
@@ -319,6 +400,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		DF92B3A1254FB71C004CAFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
+				INFOPLIST_FILE = BirdsViewerIntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.BirdsViewer.BirdsViewerIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF92B3A2254FB71C004CAFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
+				INFOPLIST_FILE = BirdsViewerIntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiong.BirdsViewer.BirdsViewerIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DFF3FF53254F9B010034B6C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -512,7 +633,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WVA557D4TC;
+				DEVELOPMENT_TEAM = AF2T6TGAP8;
 				INFOPLIST_FILE = BirdsPreviewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,6 +651,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DF92B3A3254FB71C004CAFCC /* Build configuration list for PBXNativeTarget "BirdsViewerIntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF92B3A1254FB71C004CAFCC /* Debug */,
+				DF92B3A2254FB71C004CAFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DFF3FF41254F9AFF0034B6C1 /* Build configuration list for PBXProject "BirdsViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
